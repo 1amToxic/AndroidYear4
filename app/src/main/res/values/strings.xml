@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AndroidExampleYear</string>
+    <string name="soa">Số A</string>
+    <string name="sob">Số B</string>
+    <string name="text_add">Cộng</string>
+    <string name="text_sub">Trừ</string>
+    <string name="text_result">Kết quả:</string>
+    <string name="text_mul">Nhân</string>
+    <string name="text_div">Chia</string>
 </resources>
