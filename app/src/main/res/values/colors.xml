@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main_background">#062d40</color>
     <color name="color_hint_main">#496878</color>
-    <color name="color_text_add_task">#3b596a</color>
+    <color name="color_text_add_task">#507393</color>
+    <color name="border_edit_text">#507393</color>
 </resources>
