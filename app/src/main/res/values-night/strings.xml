@@ -1,9 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AndroidExampleYear</string>
     <string name="menu_search">Search</string>
     <string name="menu_settings">Settings</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_take_note">Ghi chú nhanh mọi lúc mọi nơi</string>
     <string name="text_welcome">Welcome</string>
     <string name="text_remind">Nhắc nhở chúng ta những điều quan trọng</string>
