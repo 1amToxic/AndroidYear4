@@ -7,4 +7,9 @@
     <string name="text_take_note">Ghi chú nhanh mọi lúc mọi nơi</string>
     <string name="text_welcome">Welcome</string>
     <string name="text_remind">Nhắc nhở chúng ta những điều quan trọng</string>
+    <string name="text_add_task">Add Task</string>
+    <string name="name">Name</string>
+    <string name="fab_content">Done</string>
+    <string name="tag">Tag</string>
+    <string name="description">Description</string>
 </resources>
