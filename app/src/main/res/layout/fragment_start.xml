@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.StartFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Please choose your language"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:checkedButton="@id/rbVietnam">
+
+        <RadioButton
+            android:id="@+id/rbVietnam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#329C91"
+            android:text="@string/vietnam"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F177AC"
+            android:text="@string/english"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbGermany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E8D059"
+            android:text="@string/germany"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Confirm" />
+</LinearLayout>
