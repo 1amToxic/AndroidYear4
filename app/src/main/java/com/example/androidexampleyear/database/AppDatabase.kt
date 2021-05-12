@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.example.androidexampleyear.model.Book
 import com.example.androidexampleyear.model.User
 
-@Database(entities = [User::class, Book::class], version = 1)
+@Database(entities = [User::class, Book::class], version = 2,exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun userDao()  : UserDao
     abstract fun bookDao() : BookDao
@@ -20,7 +20,7 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext,
                     AppDatabase::class.java,
                     "book"
-                ).build()
+                ).fallbackToDestructiveMigration().build()
                 INSTANCE = instance
                 instance
             }

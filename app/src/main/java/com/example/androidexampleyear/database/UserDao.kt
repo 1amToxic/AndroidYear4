@@ -8,7 +8,7 @@ import com.example.androidexampleyear.model.User
 @Dao
 interface UserDao {
     @Query("select * from user where username = :un and password = :pw")
-    fun checkLogin(un : String,pw : String) : User?
+    suspend fun checkLogin(un : String,pw : String) : User?
     @Insert
     fun insertUser(user : User)
 }

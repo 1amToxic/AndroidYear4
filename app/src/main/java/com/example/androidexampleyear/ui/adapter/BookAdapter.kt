@@ -10,13 +10,16 @@ import com.example.androidexampleyear.R
 import com.example.androidexampleyear.databinding.ItemBookBinding
 import com.example.androidexampleyear.model.Book
 
-class BookAdapter : ListAdapter<Book, BookAdapter.BookViewHolder>(DiffBookCallBack) {
+class BookAdapter(val onClickItem : (Book) -> Unit) : ListAdapter<Book, BookAdapter.BookViewHolder>(DiffBookCallBack) {
 
-    class BookViewHolder(itemView : View ) : RecyclerView.ViewHolder(itemView) {
+    inner class BookViewHolder(private val itemview : View ) : RecyclerView.ViewHolder(itemview) {
         private var binding: ItemBookBinding = ItemBookBinding.bind(itemView)
         fun bind(book: Book){
-            with(itemView){
-
+            binding.textName.text = book.name
+            binding.textContent.text = book.content
+            binding.textType.text = book.type
+            itemview.setOnClickListener{
+                onClickItem(book)
             }
         }
 
@@ -38,6 +41,6 @@ class BookAdapter : ListAdapter<Book, BookAdapter.BookViewHolder>(DiffBookCallBa
     }
 
     override fun onBindViewHolder(holder: BookAdapter.BookViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.bind(getItem(position))
     }
 }
